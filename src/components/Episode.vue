@@ -14,11 +14,11 @@
         class="mySwiper ">
         <SwiperSlide v-for="episode in result.episodes.results" :key="episode.id">
           <div @click="router.push(`/Episode/${episode.id}`)">
-          <div class=" rounded-lg shadow-md p-8 flex bg-[#63d72d] flex-col items-center text-bold text-black ml-16 mr-16 mt-8 text-lg">  <div class="text-md mb-4 ">
+          <div class=" rounded-lg shadow-md p-8 flex bg-[#63d72d] text-white flex-col items-center text-bold  ml-16 mr-16 mt-8 text-lg">  <div class="text-md mb-4 ">
               {{ episode.episode }} <br>{{ episode.name }}
             </div>
             <ul class="flex">
-              <li class="mx-2" v-for="character in episode.characters" :key="character.id">
+              <li class="mx-2 text-white" v-for="character in episode.characters" :key="character.id">
                 <h3>{{ character.name }}</h3>
               </li>
             </ul>

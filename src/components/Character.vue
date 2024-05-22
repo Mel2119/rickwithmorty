@@ -49,9 +49,9 @@ query Characters{
                   slideShadows: true,
                 }"
                 :pagination="true"
-                class="mySwiper"
+                class="mySwiper "
               >
-              <SwiperSlide  v-for="char in result.characters.results" :key="char.id">
+              <SwiperSlide class="bg-[#76be55]" v-for="char in result.characters.results" :key="char.id">
                 <!-- <router-link
                   :to="{ name: 'character', params: { id: char.id } }"
                 > -->

@@ -1,7 +1,7 @@
 <template>
     <section class="justify-center flex flex-row">    
-        <data class="rating">
-            <div class="text-xl font-serif font-bold text-black ">
+        <div class="rating mb-4">
+            <div class="text-xl font-serif font-bold  ">
                  <p class="mr-96">Rating  Summary on rick and morty</p>
             </div>
             <div class="m-8 bg-gray-200 h-3 w-[800px] rounded-full">
@@ -32,9 +32,10 @@
                     <div
                     class="bg-[#63d72d]  h-full rounded-full"
                     style="width: 6%"
-                    ></div>
+                    >
                 </div>
-        </data>
+                </div>
+        </div>
         
 </section>
 </template>
