@@ -12,9 +12,9 @@
           <li v-for="location in result.locations.results" :key="location.name">
             <div class="bg-white rounded-lg shadow-md p-4 mb-4">
               <h2>{{ location.name }}</h2>
-              <p>Type: {{ location.type }}</p>
-              <p>Dimension: {{ location.dimension }}</p>
-              <p>Residents:</p>
+              <p><span class="text-lg font bold text-black">Type: </span>{{ location.type }}</p>
+              <p><span class="text-lg font bold text-black">Dimension: </span> {{ location.dimension }}</p>
+              <p><span class="text-lg font bold text-black">Residents: </span></p>
               <div class="mx-auto max-w-7xl">
                 <Swiper :slidesPerView="6" :spaceBetween="0" :pagination="{ clickable: true }" class="mySwiper">
                   <SwiperSlide v-for="resident in location.residents" :key="resident.name">
