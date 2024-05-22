@@ -7,7 +7,7 @@
         Error: {{ error.message }}
       </div>
       <div v-else>
-        <h1>Locations</h1>
+        <h1 class="text-center text-white text-4xl font-serif   font-extrabold">Locations</h1>
         <ul class="list-none pl-4">
           <li v-for="location in result.locations.results" :key="location.name">
             <div class="bg-white rounded-lg shadow-md p-4 mb-4">

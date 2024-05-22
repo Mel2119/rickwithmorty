@@ -3,6 +3,7 @@ import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
+import Character from '../components/Character.vue'
 
 const id = useRoute().params.id;
 const { result, error, loading } =  useQuery(gql`
@@ -47,4 +48,5 @@ const { result, error, loading } =  useQuery(gql`
       </ul>
     </div>
   </div>
+  <Character />
     </template>
