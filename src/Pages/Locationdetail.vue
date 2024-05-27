@@ -1,11 +1,11 @@
 <template>
-    <section class="location-details bg-[#70cb46]">
+    <section class=" container location-details bg-[#70cb46]">
       <div class="container mx-auto px-4 py-8">
         <div class="flex justify-center items-center text-white">
           <div>
             <p class="text-4xl font-bold text-center mb-8">Location</p>
             <div class="">
-              <div class="ml-36 text-2xl font-bold "> Detail of the location</div>
+              <div class="ml-40 text-2xl font-bold "> Detail of the location</div>
               <div class="items-center justify-center ">
                 <div v-if="error">Error fetching location details: {{ error.message }}</div>
                 <div v-else-if="loading">Loading...</div>

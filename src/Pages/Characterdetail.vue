@@ -30,24 +30,15 @@ const { result, error, loading } =  useQuery(gql`
 </script>
 <template>
   <section class="bg-[#70cb46]">
-    <div class="flex flex-col space-y-4 px-10 py-20">
-      <div class="flex flex-row">
-        <img
-          :src="result.character.image"
-          alt="{{ result.character.name }} Photo"
-          class="h-64 w-64 shadow-[1px_2px_8px] rounded-md object-cover mb-4"
-        />
-        <div class="text-white text-lg flex flex-col space-y-2 ml-16 mt-16">
-          <vue-typed-js
-            :strings="['Name: ' + result.character.name]"
-            :typeSpeed="40"
-            :backSpeed="0"
-            :loop="false"
-            class="font-bold text-2xl"
-          />
-          <p>Status: <vue-typed-js :strings="[' ' + result.character.status]" :typeSpeed="40" :backSpeed="0" :loop="false" /></p>
-          <p>Species: <vue-typed-js :strings="[' ' + result.character.species]" :typeSpeed="40" :backSpeed="0" :loop="false" /></p>
-          <p>Gender: <vue-typed-js :strings="[' ' + result.character.gender]" :typeSpeed="40" :backSpeed="0" :loop="false" /></p>
+    <div class="flex flex-col space-y-4 px-10 py-20">  
+      <div class="flex flex-row ">
+        <img :src="result.character.image" alt="{{ result.character.name }} Photo" class="h-64 w-64 shadow-[1px_2px_8px] rounded-md object-cover mb-4 ">
+        <!-- <span class="text-white  text-2xl flex flex-col space-y-2 font-bold mb-2 ml-4"></span> -->
+        <div class="text-white text-lg flex flex-col space-y-2 ml-16 mt-16"> 
+          <p class="font-bold text-2xl">Name:{{ result.character.name }}</p>
+          <p>Status: {{ result.character.status }}</p>
+          <p>Species: {{ result.character.species }}</p>
+          <p>Gender: {{ result.character.gender }}</p>
         </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-0">
@@ -61,6 +52,5 @@ const { result, error, loading } =  useQuery(gql`
       </div>
     </div>
   </section>
-</template>
-
+    </template>
   
