@@ -26,37 +26,23 @@ query Characters{
   }
 `)
 </script>
- <template>
- <section class="">
-      <p class="container flex justify-center text-3xl font-serif text-black text-bold mb-8  mt-8">Characters</p>
-      <div>
-        <div class="items-center justify-center">
-          <p v-if="error">Something went wrong...</p>
-          <p v-if="loading">Loading...</p>
-          <Swiper :modules="[EffectCoverflow]" :effect="'coverflow'"
-                :grabCursor="true"
-                :centeredSlides="true"
-                :slidesPerView="'4'"
-                :coverflowEffect="{
-                  rotate: 50,
-                  stretch: 0,
-                  depth: 100,
-                  modifier: 1,
-                  slideShadows: true,
-                }"
-                :pagination="true"
-                class="mySwiper"
-              >
-              <SwiperSlide v-for="char in result.characters.results" :key="char.id">
-                <div class="flex flex-col justify-center items-center w-full h-full shadow-md rounded-lg overflow-hidden ml-0  bg-[#bff1a7]">
-                  <span class="text-white text-center text-2xl font-bold"> {{ char.name }}<br></span>
-                  <img :src="char.image" :alt="char.name" class="w-48 h-48 object-cover rounded-lg mt-4">
-                </div>
-            </SwiperSlide>
-
-        </Swiper>
-          
+<template>
+  <section class="bg-[#70cb46]">
+    <p class="container flex justify-center text-3xl font-serif text-white font-bold mb-8  mt-8">Characters</p>
+    <div v-if="error" class="text-red-500 text-center font-bold">Something went wrong: {{ error.message }}</div>
+    <div v-if="loading" class="text-blue-500 text-center font-bold">Loading characters...</div>
+    <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div v-for="char in result.characters.results" :key="char.id">
+        <div class="flex flex-col justify-center items-center w-full h-full shadow-md rounded-lg overflow-hidden  p-4">
+          <span class="text-white text-center text-2xl font-bold"> {{ char.name }}<br></span>
+          <img :src="char.image" :alt="char.name" class="w-48 h-48 object-cover rounded-lg mt-4">
+          <div class="text-white text-sm mt-4">
+            <p>Species: {{ char.species }}</p>
+            <p>Gender: {{ char.gender }}</p>
+            <p>Status: {{ char.status }}</p>
+            </div>
         </div>
       </div>
-    </section>
-</template> 
+    </div>
+  </section>
+</template>
