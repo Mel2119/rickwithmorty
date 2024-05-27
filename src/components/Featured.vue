@@ -33,7 +33,7 @@ import 'swiper/css/navigation';
     <div class="mx-auto px-20">
     <Swiper
     :modules="modules"
-    :slides-per-view="3"
+    :slides-per-view="2"
     :space-between="2"
     navigation
     :pagination="{ clickable: true }"
@@ -43,27 +43,27 @@ import 'swiper/css/navigation';
       >
     <SwiperSlide>
           <div class="flex flex-row grid-cols-2    ">
-              <img class="object-cover rounded-lg max-h-48" src="../assets/Danharman.jpg" alt="Image 1">
-              <img class="object-cover  max-h-48" src="../assets/rickandmorty1.jpg" alt="Image 2">
+              <img class="object-cover rounded-lg max-h-48" src="../assets/season3episode3.jpg" alt="Image 1">
+              <img class="object-cover  max-h-48" src="../assets/episode1.jpg" alt="Image 2">
           </div>
     </SwiperSlide>
    
    <SwiperSlide class="">
       <div class="flex flex-row grid-cols-2 ">
-          <img class="object-cover  max-h-48" src="../assets/Danharman.jpg" alt="Image 1">
-          <img class="object-cover rounded-lg max-h-48" src="../assets/rickandmorty1.jpg" alt="Image 2">
+          <img class="object-cover  max-h-48" src="../assets/season3episode3.jpg" alt="Image 1">
+          <img class="object-cover rounded-lg max-h-48" src="../assets/episode1.jpg" alt="Image 2">
       </div>
    </SwiperSlide>
    <SwiperSlide class="">
       <div class="flex flex-row grid-cols-2 ">
-          <img class="object-cover rounded-lg max-h-48" src="../assets/Danharman.jpg" alt="Image 1">
-          <img class="object-cover  max-h-48" src="../assets/rickandmorty1.jpg" alt="Image 2">
+          <img class="object-cover rounded-lg max-h-48" src="../assets/season3episode7.webp" alt="Image 1">
+          <img class="object-cover  max-h-48" src="../assets/episode 4.jpg" alt="Image 2">
       </div>
    </SwiperSlide>
    <SwiperSlide class="">
       <div class="flex flex-row ">
-          <img class="object-cover  max-h-48" src="../assets/Danharman.jpg" alt="Image 1">
-          <img class="object-cover rounded-lg max-h-48" src="../assets/rickandmorty1.jpg" alt="Image 2">
+          <img class="object-cover  max-h-48" src="../assets/season3episode3.webp" alt="Image 1">
+          <img class="object-cover rounded-lg max-h-48" src="../assets/andmorty9.jpg" alt="Image 2">
       </div>
    </SwiperSlide>
 

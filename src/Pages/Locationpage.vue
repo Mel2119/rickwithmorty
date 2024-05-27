@@ -7,11 +7,11 @@
         Error: {{ error.message }}
       </div>
       <div v-else>
-        <h1 class="text-center text-white text-4xl font-serif   font-extrabold">Locations</h1>
+        <h1 class="text-center text-white text-4xl font-serif   font-extrabold mb-4">Locations</h1>
         <ul class="list-none pl-4">
           <li v-for="location in result.locations.results" :key="location.name">
             <div class="bg-white rounded-lg shadow-md p-4 mb-4">
-              <h2>{{ location.name }}</h2>
+              <h2 class="text-2xl font-bold font-sans">{{ location.name }}</h2>
               <p><span class="text-lg font bold text-black">Type: </span>{{ location.type }}</p>
               <p><span class="text-lg font bold text-black">Dimension: </span> {{ location.dimension }}</p>
               <p><span class="text-lg font bold text-black">Residents: </span></p>

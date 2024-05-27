@@ -4,6 +4,7 @@ import { DefaultApolloClient } from '@vue/apollo-composable'
 import { ApolloClient, InMemoryCache } from '@apollo/client/core'
 import App from './App.vue'
 import router from '../src/Router/index'
+import VueTypedJs from 'vue-typed-js';
 
 
 const cache = new InMemoryCache()
@@ -21,4 +22,5 @@ const app = createApp({
   render: () => h(App),
 })
 app.use(router)
+app.use(VueTypedJs);
 app.mount('#app');
