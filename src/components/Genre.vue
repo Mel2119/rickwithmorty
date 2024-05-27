@@ -6,7 +6,7 @@
         </div>
   <div class="grid grid-cols-1 md:grid-cols-3   gap-40">
     
-    <div class="card w-full   md:w-56 bg-[#63d72d]  h-48 rounded-lg shadow-md overflow-hidden  ml-28 ">
+    <div  class="card w-full   md:w-56 bg-[#63d72d]  h-48 rounded-lg shadow-md overflow-hidden  ml-28 ">
       
       <div class="p-4">
         <h2 class="text-xl font-bold text-white text-center mt-16">Satire</h2>
