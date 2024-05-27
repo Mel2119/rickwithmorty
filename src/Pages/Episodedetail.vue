@@ -1,17 +1,17 @@
 <template>
- <section v-if="result && result.episode" class="episode-details bg-[#63d72d] text-white px-10 py-20 rounded-md shadow-md">
-    <h2 class="text-4xl font-bold mb-4 text-center">{{ result.episode.name }}</h2>
-    <div class="flex flex-col space-y-4 mb-4 justify-center text-xl episode-details ml-16">
+ <section v-if="result && result.episode" class="episode-details bg-[#63d72d]  px-10 py-20 rounded-md shadow-md">
+    <h2 class="text-4xl font-bold mb-4 text-center text-white">{{ result.episode.name }}</h2>
+    <div class="flex flex-col space-y-4 mb-4 justify-center text-xl font-semibold episode-details ml-16 text-orange-300">
       <p>Air Date: {{ result.episode.air_date }}</p>
       <p>Episode: {{ result.episode.episode }}</p>
       <p>Created: {{ result.episode.created }}</p>
     </div>
-    <h3 v-if="result.episode.characters.length > 0" class="text-2xl font-bold mb-4 text-center">Characters</h3>
+    <h3 v-if="result.episode.characters.length > 0" class="text-2xl font-bold mb-4 text-center text-white">Characters</h3>
     <ul v-if="result.episode.characters.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 characters-list">
       <li v-for="character in result.episode.characters" :key="character.id">
-        <div class="character-card bg-white rounded-md shadow-md p-2 flex flex-col items-center">
-          <img :src="character.image" alt="{{ character.name }} Photo" class="h-32 w-32 rounded-full mx-auto mb-2 object-cover">
-          <div class="character-info flex flex-col space-y-1 text-black">
+        <div class="character-card bg-transparent rounded-md shadow-md p-2 flex flex-col items-center">
+          <img :src="character.image" alt="{{ character.name }} Photo" class="h-16 w-16 rounded-full mx-auto mb-2 object-cover">
+          <div class="character-info flex flex-col space-y-1 text-white">
             <span class="text-center font-bold text-lg ">{{ character.name }}</span>
             <p>Status: {{ character.status }}</p>
             <p>Species: {{ character.species }}</p>
