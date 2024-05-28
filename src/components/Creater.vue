@@ -6,13 +6,13 @@
 
   <div class="images ml-64 grid grid-cols-2 gap-4"> <div class="image-container relative">
       <img src="../assets/juss.jpg" class="w-76 h-64 object-cover rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out" alt="Justin Roiland">
-      <div class="creator-info text-ext absolute inset-0 flex justify-center items-center font-semi text-orange-400 bold mr-64  text-center text-xl  opacity-0 hover:opacity-75 transition duration-300 ease-in-out">
+      <div class="creator-info text-ext absolute inset-0 flex justify-center items-center font-semi text-white bold mr-64  text-center text-xl  opacity-0 hover:opacity-95 transition duration-300 ease-in-out">
         Justin Roiland
       </div>
     </div>
     <div class="image-container relative">
       <img src="../assets/dah.jpg" class="w-76 h-64 object-cover rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out" alt="Dan Harmon">
-      <div class="creator-info absolute inset-0 flex justify-center items-center mr-64  text-center text-xl font-semibold  text-orange-400 opacity-0 hover:opacity-75 transition duration-300 ease-in-out">
+      <div class="creator-info absolute inset-0 flex justify-center items-center mr-64  text-center text-xl font-semibold  text-white opacity-0 hover:opacity-95 transition duration-300 ease-in-out">
         Dan Harmon
       </div>
     </div>
