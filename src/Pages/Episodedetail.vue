@@ -1,7 +1,7 @@
 <template>
- <section v-if="result && result.episode" class="episode-details bg-[#70cb46]  px-10 py-20 rounded-md shadow-md">
+ <section v-if="result && result.episode" class="episode-details bg-[#8ee167]  px-10 py-20 rounded-md shadow-md">
     <h2 class="text-4xl font-bold mb-4 text-center text-white">{{ result.episode.name }}</h2>
-    <div class="flex flex-col space-y-4 mb-4 justify-center text-xl font-semibold episode-details ml-16 text-orange-300">
+    <div class="flex flex-col space-y-4 mb-4 justify-center text-xl font-semibold episode-details ml-16 text-orange-400">
       <p>Air Date: {{ result.episode.air_date }}</p>
       <p>Episode: {{ result.episode.episode }}</p>
       <p>Created: {{ result.episode.created }}</p>

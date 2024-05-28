@@ -1,5 +1,5 @@
 <template>
-    <section class=" container location-details bg-[#70cb46]">
+    <section class=" container location-details bg-[#8ee167]">
       <div class="container mx-auto px-4 py-8">
         <div class="flex justify-center items-center text-white">
           <div>

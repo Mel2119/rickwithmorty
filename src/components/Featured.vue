@@ -41,29 +41,31 @@ import 'swiper/css/navigation';
     @swiper="onSwiper"
     @slideChange="onSlideChange"
       >
-    <SwiperSlide>
-          <div class="flex flex-row grid-cols-2    ">
-              <img class="object-cover rounded-lg max-h-48" src="../assets/season3episode3.jpg" alt="Image 1">
-              <img class="object-cover  max-h-48" src="../assets/episode1.jpg" alt="Image 2">
-          </div>
-    </SwiperSlide>
+    
    
    <SwiperSlide class="">
       <div class="flex flex-row grid-cols-2 ">
-          <img class="object-cover  max-h-48" src="../assets/season3episode3.jpg" alt="Image 1">
-          <img class="object-cover rounded-lg max-h-48" src="../assets/episode1.jpg" alt="Image 2">
+          <img class="object-cover  max-h-48 h-44" src="../assets/season3.jpg" alt="Image 1">
+          <img class="object-cover rounded-lg max-h-48 h-44" src="../assets/season09.jpg" alt="Image 2">
       </div>
    </SwiperSlide>
+   
    <SwiperSlide class="">
       <div class="flex flex-row grid-cols-2 ">
-          <img class="object-cover rounded-lg max-h-48" src="../assets/season3episode7.webp" alt="Image 1">
-          <img class="object-cover  max-h-48" src="../assets/episode 4.jpg" alt="Image 2">
+          <img class="object-cover rounded-lg max-h-48" src="../assets/season01.jpg" alt="Image 1">
+          <img class="object-cover  max-h-48 " src="../assets/season2.jpg" alt="Image 2">
       </div>
    </SwiperSlide>
+   <SwiperSlide>
+          <div class="flex flex-row grid-cols-2    ">
+              <img class="object-cover rounded-lg max-h-48" src="../assets/season3episode3.jpg" alt="Image 1">
+              <img class="object-cover  max-h-48" src="../assets/season1.jpg" alt="Image 2">
+          </div>
+    </SwiperSlide>
    <SwiperSlide class="">
       <div class="flex flex-row ">
-          <img class="object-cover  max-h-48" src="../assets/season3episode3.webp" alt="Image 1">
-          <img class="object-cover rounded-lg max-h-48" src="../assets/andmorty9.jpg" alt="Image 2">
+          <img class="object-cover  max-h-48" src="../assets/season0.jpg" alt="Image 1">
+          <img class="object-cover rounded-lg max-h-48" src="../assets/season8.jpg" alt="Image 2">
       </div>
    </SwiperSlide>
 

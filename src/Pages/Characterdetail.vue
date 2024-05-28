@@ -29,7 +29,7 @@ const { result, error, loading } =  useQuery(gql`
 `);
 </script>
 <template>
-  <section class="bg-[#70cb46]">
+  <section class="bg-[#8ee167]">
     <div class="flex flex-col space-y-4 px-10 py-20">  
       <div class="flex flex-row ">
         <img :src="result.character.image" alt="{{ result.character.name }} Photo" class="h-64 w-64 shadow-[1px_2px_8px] rounded-md object-cover mb-4 ">

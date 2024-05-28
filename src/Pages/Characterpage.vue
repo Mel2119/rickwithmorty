@@ -27,7 +27,7 @@ query Characters{
 `)
 </script>
 <template>
-  <section class="bg-[#70cb46]">
+  <section class="bg-[#8ee167]">
     <p class="container flex justify-center text-3xl font-serif text-white font-bold mb-8  mt-8">Characters</p>
     <div v-if="error" class="text-red-500 text-center font-bold">Something went wrong: {{ error.message }}</div>
     <div v-if="loading" class="text-blue-500 text-center font-bold">Loading characters...</div>
