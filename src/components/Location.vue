@@ -52,10 +52,7 @@ query{
       name
         type
         dimension
-        id
-        
-       
-      
+        id    
     }
     
   }

@@ -8,8 +8,9 @@
       </div>
       <div v-else>
         <h1 class="text-center text-white text-4xl font-serif   font-extrabold mb-4">Locations</h1>
-        <ul class="list-none pl-4">
+        <ul class=" list-none pl-4 ">
           <li v-for="location in result.locations.results" :key="location.name">
+           <div  @click="router.push(`/Location/${location.id}`)">
             <div class="bg-white rounded-lg shadow-md p-4 mb-4">
               <h2 class="text-2xl font-bold font-sans">{{ location.name }}</h2>
               <p><span class="text-lg font bold text-black">Type: </span>{{ location.type }}</p>
@@ -24,8 +25,9 @@
                     </div>
                   </SwiperSlide>
                 </Swiper>
-              </div>
             </div>
+           </div>
+          </div>
           </li>
         </ul>
       </div>
@@ -38,6 +40,7 @@ import gql from 'graphql-tag'
 import {useQuery} from '@vue/apollo-composable';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
+import { RouterLink, useRouter } from 'vue-router';
 import HeaderVue from '../components/Header.vue'
 const { result, loading, error }=useQuery(gql`
   query Locations {
@@ -45,6 +48,7 @@ const { result, loading, error }=useQuery(gql`
       results {
         name
         type
+        id
         dimension
         residents {
           name
@@ -55,5 +59,6 @@ const { result, loading, error }=useQuery(gql`
   }
 `)
 const route=useRoute()
+const router = useRouter()
 </script>
 
