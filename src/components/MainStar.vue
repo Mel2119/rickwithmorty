@@ -18,6 +18,9 @@
           <div class="flex flex-row grid-cols-2    ">
               <img class="object-cover rounded-lg max-h-48" src="../assets/chris parnell.jpg" alt="Image 1">
               <img class="object-cover  max-h-48" src="../assets/jerry smith.jpg" alt="Image 2">
+              <div class="absolute inset-0 flex justify-center items-center ml-2  text-center text-xl font-bold  text-white opacity-0 hover:opacity-95 transition duration-300 ease-in-out font-serif">
+                 <p>Chris parnell</p>
+             </div>
           </div>
     </SwiperSlide>
    
@@ -25,23 +28,31 @@
       <div class="flex flex-row grid-cols-2 ">
           <img class="object-cover  max-h-48" src="../assets/juss.jpg" alt="Image 1">
           <img class="object-cover rounded-lg max-h-48" src="../assets/rickwithmorty.jpg" alt="Image 2">
+          <div class="absolute inset-0 flex justify-center items-center ml-4  text-center text-xl font-bold  text-white opacity-0 hover:opacity-95 transition duration-300 ease-in-out font-serif">
+                 <p>Justin Roiland</p>
+          </div>
       </div>
    </SwiperSlide>
    <SwiperSlide class="">
       <div class="flex flex-row grid-cols-2 ">
           <img class="object-cover rounded-lg max-h-48" src="../assets/sarah.jpg" alt="Image 1">
           <img class="object-cover  max-h-48" src="../assets/bethsmith.jpg" alt="Image 2">
+          <div class="absolute inset-0 flex justify-center items-center ml-4  text-center text-xl font-bold  text-[#8ee167] opacity-0 hover:opacity-95 transition duration-300 ease-in-out font-serif">
+                 <p>Sarah Chalke</p>
+          </div>
       </div>
    </SwiperSlide>
    <SwiperSlide class="">
       <div class="flex flex-row ">
           <img class="object-cover  max-h-48" src="../assets/spencer.jpg" alt="Image 1">
           <img class="object-cover rounded-lg max-h-48" src="../assets/summersmith.jpg" alt="Image 2">
+          <div class="absolute inset-0 flex justify-center items-center ml-4  text-center text-xl font-bold  text-[#8ee167] opacity-0 hover:opacity-95 transition duration-300 ease-in-out font-serif">
+                 <h1>Spencer Grammer</h1>
+          </div>
       </div>
    </SwiperSlide>
-        </Swiper>
-      </div>
-      
+  </Swiper>
+      </div>     
     </section>
   </template>
   
