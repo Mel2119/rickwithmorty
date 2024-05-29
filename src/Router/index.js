@@ -15,7 +15,7 @@ const router=createRouter({
          component:Home
        },
        {
-        path:"/Locationpage/:key",
+        path:"/Locationpage",
         name:"Locationpage",
         component:Locationpage
       },

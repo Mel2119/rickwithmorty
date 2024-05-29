@@ -8,7 +8,8 @@
       Error: {{ error.message }}
     </div>
   
-    <div v-else>  
+    <div v-else> 
+      <NavVue/> 
       <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <li v-for="episode in result.episodes.results" :key="episode.name">
           <div class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center" @click="router.push(`/Episode/${episode.id}`)" > 
@@ -18,14 +19,17 @@
           </div>
         </li>
       </ul>
+      <FooterVue />
     </div>
 </section>
   </template>
 <script setup>
 import { useQuery } from '@vue/apollo-composable';
 import gql from 'graphql-tag';
+import FooterVue from '../components/Footer.vue'
 import {useRoute} from "vue-router";
 import { RouterLink, useRouter } from 'vue-router';
+import NavVue from '../components/nav.vue'
 const { result, loading, error } = useQuery(gql`
 query{
   episodes{

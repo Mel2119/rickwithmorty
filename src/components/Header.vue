@@ -7,7 +7,7 @@
             
         </div>
         <a href="#" class="">Home</a>
-        <RouterLink :to="`/Locationpage/${keyword}`">Locations</RouterLink>
+        <RouterLink :to="`/Locationpage`">Locations</RouterLink>
         <RouterLink :to="`/Episodepage`">Episodes</RouterLink>
         <RouterLink :to="`/Characterpage`">Characters</RouterLink>
     </nav>

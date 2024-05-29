@@ -4,7 +4,8 @@ import gql from "graphql-tag";
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import Character from '../components/Character.vue'
-
+import FooterVue from "../components/Footer.vue";
+import NavVue from '../components/nav.vue'
 const id = useRoute().params.id;
 const { result, error, loading } =  useQuery(gql`
   query {
@@ -42,6 +43,7 @@ const { result, error, loading } =  useQuery(gql`
         </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-0">
+        <NavVue />
         <div v-for="episode in result.character.episode" :key="episode.id" class="bg-transparent rounded-md p-4 shadow-md">
           <span class="text-white text-lg font-bold">{{ episode.name }}</span>
           <div class="text-white text-sm">
@@ -50,6 +52,7 @@ const { result, error, loading } =  useQuery(gql`
           </div>
         </div>
       </div>
+      <FooterVue />
     </div>
   </section>
     </template>

@@ -9,6 +9,7 @@
       <div v-else>
         <h1 class="text-center text-white text-4xl font-serif   font-extrabold mb-4">Locations</h1>
         <ul class=" list-none pl-4 ">
+          <NavVue/>
           <li v-for="location in result.locations.results" :key="location.name">
            <div  @click="router.push(`/Location/${location.id}`)">
             <div class="bg-white rounded-lg shadow-md p-4 mb-4">
@@ -30,14 +31,18 @@
           </div>
           </li>
         </ul>
+        <FooterVue/>
       </div>
     </section>
+    
   </template>
   
 <script setup>
 import {useRoute} from "vue-router";
 import gql from 'graphql-tag'
+import FooterVue from '../components/Footer.vue'
 import {useQuery} from '@vue/apollo-composable';
+import NavVue from '../components/nav.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import { RouterLink, useRouter } from 'vue-router';

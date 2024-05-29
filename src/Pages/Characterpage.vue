@@ -6,8 +6,9 @@ import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 import { RouterLink, useRouter } from 'vue-router';
 import { EffectCoverflow } from 'swiper/modules';
-
+import FooterVue from "../components/Footer.vue";
 import 'swiper/css/effect-coverflow';
+import NavVue from '../components/nav.vue'
 const { result,loading,error} = useQuery(gql`
 
 query Characters{
@@ -34,6 +35,7 @@ const router = useRouter()
     <div v-if="error" class="text-red-500 text-center font-bold">Something went wrong: {{ error.message }}</div>
     <div v-if="loading" class="text-blue-500 text-center font-bold">Loading characters...</div>
     <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <NavVue />
       <div v-for="char in result.characters.results" :key="char.id">
         <div class="flex flex-col justify-center items-center w-full h-full shadow-md rounded-lg overflow-hidden  p-4"  @click="router.push(`/Character/${char.id}`)">
           <span class="text-white text-center text-2xl font-bold"> {{ char.name }}<br></span>
@@ -45,6 +47,8 @@ const router = useRouter()
             </div>
         </div>
       </div>
+      
     </div>
+    <FooterVue />
   </section>
 </template>
