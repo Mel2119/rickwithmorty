@@ -1,6 +1,6 @@
 <template>
     <section class="bg-[#8ee167] w-full">
-      <h1 class="text-2xl text-white font-bold font-serif  text-center  mb-4 ">Episodes</h1>
+      <h1 class="text-2xl text-white font-bold font-serif  text-center  mb-8 mt-5">Episodes</h1>
     <div v-if="loading">
       Loading episodes...
     </div>

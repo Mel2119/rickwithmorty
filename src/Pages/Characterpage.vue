@@ -31,7 +31,7 @@ const router = useRouter()
 </script>
 <template>
   <section class="bg-[#8ee167]">
-    <p class="container flex justify-center text-3xl font-serif text-white font-bold mb-8  mt-8">Characters</p>
+    <p class="container flex justify-center text-2xl font-serif text-white font-bold mb-8 mt-5  ">Characters</p>
     <div v-if="error" class="text-red-500 text-center font-bold">Something went wrong: {{ error.message }}</div>
     <div v-if="loading" class="text-blue-500 text-center font-bold">Loading characters...</div>
     <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
