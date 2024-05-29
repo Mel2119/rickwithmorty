@@ -10,12 +10,12 @@
   <LocationVue />
   <CreaterVue />
   <RatingVue />
-  <div class="flex justify-center text-purple-800 font-bold">
-  <a href="https://www.figma.com/design/iLk6KEEMR46ZrhA7mlttk5/Relocate---Travel-website-Landing-page-(Community)?node-id=668-40&t=3M5D8YGFeyLctH5M-0">
+  <div class="flex justify-center text-purple-800 font-bold"  >
+  <a href="https://www.figma.com/design/iLk6KEEMR46ZrhA7mlttk5/Relocate---Travel-website-Landing-page-(Community)?node-id=668-40&t=zjsUcG2fMXrJMHUj-0" target="_blank">
     <p class="group hover:text-blue-500 transition duration-300 ease-in-out">
       <i class="fas fa-long-arrow-alt-right group-hover:translate-x-4 mb-8 mt-8">Look into the  Figma</i>
     </p>
-  </a>
+  </a>/
 </div>
 
   <FooterVue />
