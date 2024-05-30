@@ -2,10 +2,6 @@
   <div class="container bg-slate-300 ">
    <header class="w-full h-screen relative ">
     <nav class=" mr-8 text-white flex flex-wrap font-serif space-x-8 justify-end fixed top-0 left-0 right-0 z-20 bg-transparent"> 
-        <!-- <div class="container flex flex-row space-x-4 mt-0">   
-            <img src="../assets/rickandmorty.png" class=" logo w-16 " alt="">
-            
-        </div> -->
         <a href="#" class="">Home</a>
         <RouterLink :to="`/Locationpage`">Locations</RouterLink>
         <RouterLink :to="`/Episodepage`">Episodes</RouterLink>
@@ -23,8 +19,6 @@
 
 <script setup>
 import {RouterLink} from 'vue-router'
-  import {ref} from 'vue'
-  var keyword=ref("Location")
-
+ 
 </script>
 
