@@ -7,7 +7,7 @@
         <RouterLink :to="`/Episodepage`">Episodes</RouterLink>
         <RouterLink :to="`/Characterpage`">Characters</RouterLink>
     </nav>
-    <div class="absolute inset-0 w-full">
+    <div class="absolute inset-0 w-screen">
         <img src="../assets/new.webp" class="w-full h-full object-cover" alt="">
     </div>  
     <!-- <h1 class="text-white text-center absolute bottom-0 font-extrabold text-3xl w-full  pb-44  pl-96 ml-16  z-50 font-lg font-serif">Welcome to the<span class="text-white "><br>Rickandmorty</span>  tv show!</h1> -->
